@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tech Blog - JS</title>
+</head>
+<body>
+    
+    <h1>Javascript Notes</h1>
+
+    <h2>Writing JS</h2>
+
+    <p>JavaScript should be added at the end of the body tag because JS generally will affect HTML elements and a browser loads sequentially. Therefore, if at the top the JS will try to affect elements that haven’t even been rendered yet
+        Additionally, it also affects the load time of the website making it load slower
+        You can add javascript in 3 ways. <br>
+        Inline <br>
+        “script” <br>
+        “script:src” <br>
+        Although not necessary in most cases using a semicolon ( ; ) at the end of your lines is recommended as there are rare cases where it is necessary to.
+        Addiontally a comment in js is written by using two slashes.
+    </p>
+
+    <h2>Variables</h2>
+
+    <p>
+        There are three keywords to declare a variable: <br>
+        <strong>var</strong> -  <br>
+        With “var” the value within can be changed
+        var is an older way of creating variables used in earlier versions of JS
+        var has a scope that functions differently that sometimes allows variables inside of a function to be accessed outside of the function.
+        Realistically nowadays there is no good reason to use var 
+        It is better to just use “var” and “const” <br>
+        <strong>let</strong> - <br>
+        With “let” the value can also be changed later on <br>
+        <strong>const</strong> - <br>
+        Const is immutable which means that it cannot be changed
+    </p>
+
+    <h2>Operators</h2>
+
+    <p></p>
+
+    <p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="ExvrRyL" data-user="divdmr" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/divdmr/pen/ExvrRyL">
+        JS-Operators</a> by DivDMR (<a href="https://codepen.io/divdmr">@divdmr</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+    <h2>Functions</h2>
+
+    <p>
+        In JS a function is defined by the keyword “function”
+        Proper Syntax would be as follows:
+        "function FunctionName(parameter 1, parameter 2)" <br>       
+        You have the “function” keyword followed by the name of the function along with a set of parentheses. 
+        Inside these parentheses, you have the parameters that you will pass through the function. <br>
+        An example of a full simple function would be this:
+    </p>
+
+    <p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="abyProK" data-user="divdmr" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/divdmr/pen/abyProK">
+        Count-to-N</a> by DivDMR (<a href="https://codepen.io/divdmr">@divdmr</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+    <h2>Object</h2>
+    <p>
+        Objects are very widely used in programming and as well in Javascript.
+        An object is just like a variable and is defined using “let” or “const” however, it has information stored with curly brackets. <br>
+        As you can see at the end of the page, an object is written with “name:value”/”key:value” pairs.
+        This allows you to store much more information within a single variable as compared with simple strings and integers.
+    </p>    
+
+    <h2>Loops</h2>
+
+    <p>
+        Loops are a very useful tool that is used in most program languages and are defined in Javascript with the “for” and “while” keywords (both behave slightly differently)
+        A for loop is most commonly structured like this:
+    </p>
+
+    <p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="PoKLKKd" data-user="divdmr" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/divdmr/pen/PoKLKKd">
+        Untitled</a> by DivDMR (<a href="https://codepen.io/divdmr">@divdmr</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    
+    <h2>Arrays</h2>
+
+    <p>
+        Arrays are similar to objects to an extent and are just another type of variable as a string or integer is.
+        A JS array functions very similar to that of a python list and has a numerical index on its entries, something an object doesn’t have
+        Here is an example of an array: <br>
+        let fruits = ['Apple', 'Banana'] <br>
+        As seen above an array is declared the same way as any other variable and it has a square bracket around it instead of curly brackets.
+    </p>
+
+    <h2>If Statements</h2>
+
+    <p>
+        An if statement is a logical statement that works a lot like our brains
+        The essence of it is “if these things are true do this, otherwise, if these things are true do this, if none of those things are true do this” 
+        The syntax goes as follows: 
+    </p>
+
+    <p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="wvqROgm" data-user="divdmr" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/divdmr/pen/wvqROgm">
+        JavaScript</a> by DivDMR (<a href="https://codepen.io/divdmr">@divdmr</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+</body>
+</html>
